@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+html, body {
+	height: 100%;
+	font-family: Lato;
+	color: #345;
+}
+
+a {
+	color: #096;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #5BCF80;
+}
+
+.content {
+	max-width: 960px;
+	margin: auto;
+	padding-bottom: 4em;
+}
+
+.title {
+	text-align: center;
+}
+
+.sub-title {
+	font-size: 1em;
+	margin: .1em 0 .6em;
+	display: inline-block;
+	font-style: italic;
+	padding: 6px 10px;
+	background: #5BCF80;
+	color: #fff;
+	border-radius: 4px;
+	line-height: 1;
+}
+
+.section-title {
+	position: relative;
+	margin-top: 3em;
+}
+
+.section-title span {
+	position: relative;
+	display: inline-block;
+	padding: 0 1em;
+	margin-left: 1.4em;
+	background: #fff;
+}
+
+.section-title:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	border-bottom: 4px solid #EAEEEF;
+}
+
+.sub-title-container {
+	text-align: center;
+}
+
+#ka-autocomplete {
+	width: 30%;
+	margin: auto;
+}
+
+.ka-input {
+	margin-left: -1.3em;
+	width: 100%;
+	padding: 1.4em;
+	outline: 0;
+	color: #6A7686;
+	border: 2px solid #e9eeee;
+	border-radius: 4px;
+}
+
+.ka-input:focus {
+	border-color: #b7c6c9;
+}
+
+.ka-list {
+	list-style: none;
+	margin: 0;
+	padding: 0 5px;
+	position: absolute;
+	z-index: 9999;
+	max-height: 254px;
+	overflow: hidden;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	background-color: #fff;
+}
+
+.ka-list .focus {
+	background: #FFFFCF;
+}
+
+.ka-list-item {
+	padding: 5px;
+	cursor: pointer;
+}
+
+.ka-list-item:hover {
+	background: #FFFFCF;
+}
+
+a.button {
+	display: inline-block;
+	position: relative;
+	padding: 1em 2em 1em;
+	font-size: .925em;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1.2;
+	border: 0;
+	outline: 0;
+	background: #fff;
+	border: 2px solid #DDE4E6;
+	color: #6A7686;
+	text-shadow: none;
+	border-radius: 4px;
+	transition: color 0.1s, background-color .2s, border-color .2s;
+}
+
+a.button:hover {
+	background-color: #3aa4d8;
+	color: #fff;
+}
+
+.code-snippet {
+	overflow-y: auto;
+	background:rgba(238,238,238,0.92);
+}
+
+.download-btn-container {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.download-btn {
+	margin-left: 0.5em;
+}
+
+.download-link {
+	font-size: 1.2em;
+}

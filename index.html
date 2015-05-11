@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/ka-autocomplete.css">
+	<title>ka-autocomplete | Simple light-weight vanilla JS Autocomplete</title>
+</head>
+
+<body>
+	<div class="content">
+		<h1 class="title">ka-autocomplete</h1>
+		<div class="sub-title-container"><p class="sub-title">A simple light-weight vanilla JavaScript autocomplete</p></div>
+		<div id="ka-autocomplete"></div>
+		<div class="download-btn-container"><a class="button download-btn">Download</a></div>
+		<div class="documentation">
+			<h3 class="section-title"><span>Description</span></h3>
+			This is light weight autocomplete plugin written in vanilla JavaScript. It has no dependencies on any other libraries. In case you want to use it, you can get it <strong><a class="download-link">here</a></strong>.
+			<h3 class="section-title"><span>How to use?</span></h3>
+			Include the .js and .css files in your HTML and call the <strong>create()</strong> function of <strong>kaAutocomplete</strong> along with the wrapper element and the list of suggestions as arguments. For example, if you want to insert the autocomplete component inside the div with id = 'ka-autocomplete' in the following HTML snippet, add the code in JS snippet to your JavaScript code.
+			
+			<h4>HTML snippet</h4>
+				<div class="code-snippet">
+					<pre style="background:rgba(238,238,238,0.92);color:#000"><span style="color:#03c">&lt;<span style="font-weight:700">body</span>></span>
+	<span style="color:#03c">&lt;<span style="font-weight:700">div</span> <span style="color:#36c;font-style:italic">id</span>=<span style="color:#093">"ka-autocomplete"</span>>&lt;/<span style="font-weight:700">div</span>></span>
+<span style="color:#03c">&lt;/<span style="font-weight:700">body</span>></span>
+</pre>
+				</div>
+			<h4>JS snippet</h4>
+				<div class="code-snippet">
+					<pre style="background:rgba(238,238,238,0.92);color:#000"><span style="font-weight:700">var</span> kaAutocompleteWrapper <span style="color:#00f">=</span> <span style="color:#33f;font-weight:700">document</span>.<span style="color:#33f;font-weight:700">getElementById</span>(<span style="color:#093">'ka-autocomplete'</span>);
+<span style="font-weight:700">var</span> list <span style="color:#00f">=</span> [<span style="color:#093">'The Beatles'</span>, <span style="color:#093">'The Doors'</span>, <span style="color:#093">'AC/DC'</span>, <span style="color:#093">'Led Zeppelin'</span>] <span style="color:#06f;font-style:italic">// replace with your list</span>
+kaAutocomplete.create(kaAutocompleteWrapper, list);
+</pre>
+				</div>
+			<h3 class="section-title"><span>Browser Support</span></h3>
+			Tested in Firefox, Safari, Chrome, Opera, Internet Explorer 8+.
+		</div>
+	</div>
+	<script src="js/ka-autocomplete.js"></script>
+	<script>
+
+		var kaAutocompleteWrapper = document.getElementById('ka-autocomplete');
+
+		var list = [
+			'The Beatles',
+			'The Doors',	
+			'AC/DC',
+			'Led Zeppelin',
+			'Pink Floyd',
+			'The Rolling Stones',
+			'Jefferson Airplane',
+			'The Who',
+			'Metallica',
+			'Lynyrd Skynyrd',
+			'Queen',
+			'Guns N Roses',
+			'Black Sabbath',
+			'Aerosmith',
+			'Creedence Clearwater Revival',
+			'Scorpions',
+			'Kiss',
+			'Bad Company',
+			'Steppenwolf',
+			'The Velvet Underground',
+			'Bob Dylan',
+			'The Kinks',
+			'Iron Maiden',
+			'The Allman Brothers Band',
+			'Deep Purple',
+			'The Black Keys',
+			'The Clash',
+			'Def Leppard',
+			'Simon & Garfunkel',
+			'Motley Crue',
+		]
+
+		kaAutocomplete.create(kaAutocompleteWrapper, list);
+
+	</script>
+</body>
+
+</html>
