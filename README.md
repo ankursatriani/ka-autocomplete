@@ -9,7 +9,7 @@ Include the .js and .css files in your HTML and call the **create()** function o
 
 ```HTML
 <body>
-  <div id="kaAutocomplete"></div>
+  <div id="ka-autocomplete"></div>
 </body>
 ```
 
