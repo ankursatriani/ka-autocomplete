@@ -58,6 +58,7 @@
 				currInput = kaInput.value.toLowerCase();
 			}
 		} else {
+			focusPosition = -1;
 			if (kaList.style.display === 'none' && (kaInput.value !== '' || (
 				keyCode !== 8 || keyCode !== 127)) && currInput != oldInput) {
 				kaList.style.display = 'block';
