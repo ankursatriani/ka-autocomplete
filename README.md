@@ -25,6 +25,10 @@ kaAutocomplete.create(kaAutocompleteWrapper, list);
 
 Tested in Firefox, Safari, Chrome, Opera, Internet Explorer 8+.
 
+### Todo
+
+Add support for objects.
+
 ### License
 
 Please read the LICENSE file.
